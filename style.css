@@ -138,6 +138,35 @@ h2 {
   height: 48px;
   width: 100%;
   z-index: 200;
+
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  align-items: center;
+  justify-items: center;
+}
+
+.navbar-back {
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right:10px solid white;
+  border-radius: 2px;
+
+}
+
+.navbar-home {
+  width: 14px;
+  height: 14px;
+  background: white;
+  border-radius: 50%;
+
+}
+
+.navbar-recent {
+  width: 14px;
+  height: 14px;
+  background: white;
 }
 
 .outofservice {
