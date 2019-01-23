@@ -94,7 +94,7 @@ h2 {
   line-height: 18px;
 }
 
-.header {
+header {
   background-color: #3F51B5;
   height: 56px;
   display: grid;
@@ -131,7 +131,7 @@ h2 {
   padding-top: 10px;
 }
 
-.navbar {
+nav {
   position: fixed;
   bottom: 0;
   background-color: #000000;
@@ -184,7 +184,6 @@ p {
 }
 
 .real-time {
-  font-size: 1.15em;
   justify-self: center;
 }
 

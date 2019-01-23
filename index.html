@@ -1,150 +1,152 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>BusyBus</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-  </head>
-  <body>
-    <div class="status-bar">
-      <div></div>
-      <div class="wifi"></div>
-      <div class="data"></div>
-      <div class="battery"></div>
-      <div class="time">12:30</div>
-    </div>
-
-    <div class="header">
+<head>
+  <meta charset="utf-8">
+  <title>BusyBus</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+</head>
+<body>
+  <div class="status-bar">
+    <div></div>
+    <div class="wifi"></div>
+    <div class="data"></div>
+    <div class="battery"></div>
+    <div class="time">12:30</div>
+  </div>
+  <section>
+    <header>
       <i class="material-icons arrow" style="color: #ffffff">
         arrow_back
       </i>
       <h1> Washington & State </h1>
-    </div>
-    <div class="shadow"></div>
+      <div class="shadow"></div>
+    </header>
+  </section>
+  <div class="main">
 
-    <div class="main">
-      <div class="bus-routes">
-        <i class="material-icons drawer">
-          keyboard_arrow_down
-        </i>
+    <div class="bus-routes">
+      <i class="material-icons drawer">
+        keyboard_arrow_down
+      </i>
 
-        <div class="bus-list">
-          <div class="bus-indicator"></div>
-          <div>
+      <ul class="bus-list">
+        <li class="bus-indicator">
+          <li>
             <h2>Randolph/Harbor Dr</h2>
             <p>E 60</p>
             <p>Every 20 minutes</p>
+          </li>
+          <li class="real-time"><h2>5 min</h2>
+          </ul>
+
+          <div class="line"></div>
+
+          <ul class="bus-list">
+            <li class="bus-indicator">
+              <li>
+                <h2>Navy Pier</h2>
+                <p>E 124</p>
+                <p>Every 10 minutes</p>
+              </li>
+            <li class="real-time"><h2>9 min</h2>
+          </ul>
+
+          <div class="line"></div>
+
+          <ul class="bus-list">
+            <li class="bus-indicator">
+              <li>
+                <h2>Devon/Clark</h2>
+                <p>N 151</p>
+                <p>Every 16 minutes</p>
+              </li>
+            <li class="real-time"><h2>7 min</h2>
+          </ul>
+
+          <div class="line"></div>
+
+          <ul class="bus-list">
+            <li class="bus-indicator">
+              <li>
+                <h2>103rd/Stony Island</h2>
+                <p>S J14</p>
+                <p>Every 15 minutes</p>
+              </li>
+            <li class="real-time"><h2>3 min</h2>
+          </ul>
+
+          <div class="line"></div>
+
+          <ul class="bus-list">
+            <li class="bus-indicator reroute-bar">
+              <li>
+                <h2 class="reroute">Rerouted</h2>
+                <h2>Jackson Park Express</h2>
+                <p>S J14</p>
+              </li>
+            <li class="real-time"><h2>N/A</h2>
+          </ul>
+
+          <div class="line"></div>
+
+          <ul class="bus-list">
+            <li class="bus-indicator outofservice-bar">
+              <li>
+                <h2 class="outofservice">Out of Service</h2>
+                <h2>Cottage Grove</h2>
+                <p>4</p>
+              </li>
+            <li class="real-time"><h2>Resumes 12:10am</h2>
+          </ul>
+
+          <div class="line"></div>
+
+          <ul class="bus-list">
+            <li class="bus-indicator outofservice-bar">
+              <li>
+                <h2 class="outofservice">Out of Service</h2>
+                <h2>Madison</h2>
+                <p>20</p>
+              </li>
+              <li class="real-time"><h2>Resumes 12:10am</h2>
+            </ul>
+
+            <div class="line"></div>
+
+            <ul class="bus-list">
+              <li class="bus-indicator outofservice-bar">
+                <li>
+                  <h2 class="outofservice">Out of Service</h2>
+                  <h2>Streeterville/Taylor</h2>
+                  <p>157</p>
+                </li>
+              <li class="real-time"><h2>Resumes 6:00am</h2>
+            </ul>
+
+            </div>
+
+            <p class="map-labels">Washington</p>
+            <div class="block block1">
+              <i class="material-icons location">
+                location_on
+              </i>
+            </div>
+            <div class="block block2"></div>
+            <div class="block block3"></div>
+            <p class="map-labels vertical-text">State</p>
+
           </div>
-          <h2 class="real-time">5 min</h2>
-        </div>
+          <div style="height:48px"></div>
 
-        <div class="line"></div>
-
-        <div class="bus-list">
-          <div class="bus-indicator"></div>
-          <div>
-            <h2>Navy Pier</h2>
-            <p>E 124</p>
-            <p>Every 10 minutes</p>
-          </div>
-          <h2 class="real-time">9 min</h2>
-        </div>
-
-        <div class="line"></div>
-
-        <div class="bus-list">
-          <div class="bus-indicator"></div>
-          <div>
-            <h2>Devon/Clark</h2>
-            <p>N 151</p>
-            <p>Every 16 minutes</p>
-          </div>
-          <h2 class="real-time">7 min</h2>
-        </div>
-
-        <div class="line"></div>
-
-        <div class="bus-list">
-          <div class="bus-indicator"></div>
-          <div>
-            <h2>103rd/Stony Island</h2>
-            <p>S J14</p>
-            <p>Every 15 minutes</p>
-          </div>
-          <h2 class="real-time">3 min</h2>
-        </div>
-
-        <div class="line"></div>
-
-        <div class="bus-list">
-          <div class="bus-indicator reroute-bar"></div>
-          <div>
-            <h2 class="reroute">Rerouted</h2>
-            <h2>Jackson Park Express</h2>
-            <p>S J14</p>
-          </div>
-          <h2 class="real-time">N/A</h2>
-        </div>
-
-        <div class="line"></div>
-
-        <div class="bus-list">
-          <div class="bus-indicator outofservice-bar"></div>
-          <div>
-            <h2 class="outofservice">Out of Service</h2>
-            <h2>Cottage Grove</h2>
-            <p>4</p>
-          </div>
-          <h2 class="real-time">Resumes 12:10am</h2>
-        </div>
-
-        <div class="line"></div>
-
-        <div class="bus-list">
-          <div class="bus-indicator outofservice-bar"></div>
-          <div>
-            <h2 class="outofservice">Out of Service</h2>
-            <h2>Madison</h2>
-            <p>20</p>
-          </div>
-          <h2 class="real-time">Resumes 12:10am</h2>
-        </div>
-
-        <div class="line"></div>
-
-        <div class="bus-list">
-          <div class="bus-indicator outofservice-bar"></div>
-          <div>
-            <h2 class="outofservice">Out of Service</h2>
-            <h2>Streeterville/Taylor</h2>
-            <p>157</p>
-          </div>
-          <h2 class="real-time">Resumes 6:00am</h2>
-        </div>
-
-      </div>
-
-      <p class="map-labels">Washington</p>
-      <div class="block block1">
-        <i class="material-icons location">
-          location_on
-        </i>
-      </div>
-      <div class="block block2"></div>
-      <div class="block block3"></div>
-      <p class="map-labels vertical-text">State</p>
-
-    </div>
-    <div style="height:48px"></div>
-    <div class="navbar">
-      <div class="navbar-back"></div>
-      <div class="navbar-home"></div>
-      <div class="navbar-recent"></div>
-    </div>
-  </body>
-</html>
+        <nav>
+          <div class="navbar-back"></div>
+          <div class="navbar-home"></div>
+          <div class="navbar-recent"></div>
+        </nav>
+      </body>
+    </html>
