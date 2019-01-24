@@ -11,25 +11,35 @@
   <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 </head>
 <body>
-  <div class="status-bar">
-    <div></div>
+  <header class="status-bar">
     <div class="wifi"></div>
     <div class="data"></div>
     <div class="battery"></div>
     <div class="time">12:30</div>
-  </div>
+  </header>
   <section>
     <header>
       <i class="material-icons arrow" style="color: #ffffff">
         arrow_back
       </i>
       <h1> Washington & State </h1>
-      <div class="shadow"></div>
     </header>
   </section>
-  <div class="main">
+  <main>
 
-    <div class="bus-routes">
+    <section class="map-grid">
+      <p class="map-labels">Washington</p>
+      <div class="block block1">
+        <i class="material-icons location">
+          location_on
+        </i>
+        <p class="map-labels vertical-text">State</p>
+      </div>
+      <div class="block block2"></div>
+      <div class="block block3"></div>
+    </section>
+
+    <section class="bus-routes">
       <i class="material-icons drawer">
         keyboard_arrow_down
       </i>
@@ -44,8 +54,6 @@
           <li class="real-time"><h2>5 min</h2>
           </ul>
 
-          <div class="line"></div>
-
           <ul class="bus-list">
             <li class="bus-indicator">
               <li>
@@ -55,8 +63,6 @@
               </li>
             <li class="real-time"><h2>9 min</h2>
           </ul>
-
-          <div class="line"></div>
 
           <ul class="bus-list">
             <li class="bus-indicator">
@@ -68,8 +74,6 @@
             <li class="real-time"><h2>7 min</h2>
           </ul>
 
-          <div class="line"></div>
-
           <ul class="bus-list">
             <li class="bus-indicator">
               <li>
@@ -79,8 +83,6 @@
               </li>
             <li class="real-time"><h2>3 min</h2>
           </ul>
-
-          <div class="line"></div>
 
           <ul class="bus-list">
             <li class="bus-indicator reroute-bar">
@@ -92,8 +94,6 @@
             <li class="real-time"><h2>N/A</h2>
           </ul>
 
-          <div class="line"></div>
-
           <ul class="bus-list">
             <li class="bus-indicator outofservice-bar">
               <li>
@@ -103,8 +103,6 @@
               </li>
             <li class="real-time"><h2>Resumes 12:10am</h2>
           </ul>
-
-          <div class="line"></div>
 
           <ul class="bus-list">
             <li class="bus-indicator outofservice-bar">
@@ -116,8 +114,6 @@
               <li class="real-time"><h2>Resumes 12:10am</h2>
             </ul>
 
-            <div class="line"></div>
-
             <ul class="bus-list">
               <li class="bus-indicator outofservice-bar">
                 <li>
@@ -128,25 +124,14 @@
               <li class="real-time"><h2>Resumes 6:00am</h2>
             </ul>
 
-            </div>
+          </section>
 
-            <p class="map-labels">Washington</p>
-            <div class="block block1">
-              <i class="material-icons location">
-                location_on
-              </i>
-            </div>
-            <div class="block block2"></div>
-            <div class="block block3"></div>
-            <p class="map-labels vertical-text">State</p>
-
-          </div>
-          <div style="height:48px"></div>
+          </main>
 
         <nav>
-          <div class="navbar-back"></div>
-          <div class="navbar-home"></div>
-          <div class="navbar-recent"></div>
+          <a class="navbar-back"></a>
+          <a class="navbar-home"></a>
+          <a class="navbar-recent"></a>
         </nav>
       </body>
     </html>
